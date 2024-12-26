@@ -79,7 +79,7 @@ const Game: React.FC = () => {
         <div>
             {isWaiting?
             <div>
-                <Link to={"/"}>
+                <Link to={"/rockpaperscissors/"}>
                     <span className='game-homebtn'>🏠 Menu</span>
                 </Link>
                 <h1 className='game-title'>ELEGI: ¿PIEDRA, PAPEL, O TIJERA?</h1>

@@ -7,7 +7,7 @@ const Rules: React.FC = () => {
     return (
         <>
             <h2 className='rules-text'>Presioná jugar y elegí: piedra, papel o tijera antes de que pasen los 3 segundos.</h2>
-            <Link to="/game">
+            <Link to="/rockpaperscissors/game">
                 <Button text='¡Jugar!' />
             </Link>
             <div className="rules-rps">
@@ -15,10 +15,10 @@ const Rules: React.FC = () => {
             <img src="./src/assets/piedra.svg" alt="Piedra" />
           </div>
           <div className="rules-rps__item">
-            <img src="src/assets/papel.svg" alt="Papel" />
+            <img src="./src/assets/papel.svg" alt="Papel" />
           </div>
           <div className="rules-rps__item">
-            <img src="src/assets/tijera.svg" alt="Tijera" />
+            <img src="./src/assets/tijera.svg" alt="Tijera" />
           </div>
         </div>
         </>

@@ -5,9 +5,9 @@ import Rules from './Rules';
 
 const AppRoutes = () => (
   <Routes>
-    <Route path="/" element={<App />} />
-    <Route path="/rules" element={<Rules />} />
-    <Route path="/game" element={<Game/>} /> 
+    <Route path="/rockpaperscissors/" element={<App />} />
+    <Route path="/rockpaperscissors/rules" element={<Rules />} />
+    <Route path="/rockpaperscissors/game" element={<Game/>} /> 
   </Routes>
 );
 

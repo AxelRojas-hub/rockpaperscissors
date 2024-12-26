@@ -5,7 +5,7 @@ import './Results.css';
 const Results: React.FC = () => {
     return (
         <div>
-            <Link to={"/"}>
+            <Link to={"/rockpaperscissors/"}>
                 <span className='results-homebtn'>🏠</span>
             </Link>
             <h1 className='results-title'>Resultados</h1>

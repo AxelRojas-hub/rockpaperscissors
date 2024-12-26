@@ -54,11 +54,11 @@ const GameMenu: React.FC<GameMenuProps> = ({ playerWins, pcWins, isWinner, onRes
                 </div>
             </div>
             <div className="btn-container">
-                <Link to='/game' onClick={onRestart}>
+                <Link to='/rockpaperscissors/game' onClick={onRestart}>
                     <Button text='Volver a jugar'/>
                 </Link>
 
-                <Link to='/'>
+                <Link to='/rockpaperscissors/'>
                     <Button text='Menu Principal'/>
                 </Link>
             </div>
