@@ -1,7 +1,7 @@
 import React from 'react';
-import piedraImg from '../assets/piedra.svg';
-import papelImg from '../assets/papel.svg';
-import tijeraImg from '../assets/tijera.svg';
+import piedraImg from '/src/assets/piedra.svg';
+import papelImg from '/src/assets/papel.svg';
+import tijeraImg from '/src/assets/tijera.svg';
 
 interface GameResultProps {
     pcChoice: 'piedra' | 'papel' | 'tijera';
