@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './GameMenu.css';
 import Button from './Button';
-import starImg from '/src/assets/star.svg';
+import starImg from './src/assets/star.svg';
 
 interface GameMenuProps {
     playerWins: number;
