@@ -8,6 +8,8 @@
   border: 6px solid;
   border-color: var(--blue);
   width: 100%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .home-btn:hover {

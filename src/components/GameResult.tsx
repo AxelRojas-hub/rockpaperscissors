@@ -9,11 +9,7 @@ const GameResult: React.FC<GameResultProps> = ({ pcChoice, playerChoice }) => {
     return (
         <div className='game-result'>
             <img className='game-pcChoice' src={`src/assets/${pcChoice}.svg`} alt={pcChoice} />
-            {playerChoice ? (
-                <img className='game-playerChoice' src={`src/assets/${playerChoice}.svg`} alt={playerChoice} />
-            ) : ( //Modificar para elegir una random
-                <h3>No elegiste ninguna opción!</h3>
-            )}
+            <img className='game-playerChoice' src={`src/assets/${playerChoice}.svg`} alt={playerChoice} />
         </div>
     );
 };

@@ -29,12 +29,10 @@ const Game: React.FC = () => {
                         setIsWaiting(false);
                         clearInterval(interval);
                         return 0;
-                        
                     }
                     return prevTime - 1;
                 });
             }, 1000);
-            
             return () => clearInterval(interval);
         }
     }, [isWaiting]);
@@ -72,13 +70,17 @@ const Game: React.FC = () => {
         }
     },[playerChoice, pcChoice]);
 
-
+    const setRandomChoice= ()=>{
+        const option=RPS_OPTIONS[Math.floor(Math.random() * RPS_OPTIONS.length)];
+        setPlayerChoice(option);
+        return option;
+    }
     return (
         <div>
             {isWaiting?
             <div>
                 <Link to={"/"}>
-                    <span className='game-homebtn'>🏠</span>
+                    <span className='game-homebtn'>🏠 Menu</span>
                 </Link>
                 <h1 className='game-title'>ELEGI: ¿PIEDRA, PAPEL, O TIJERA?</h1>
                 <span className='game-timer'>{timeRemaining}</span>
@@ -86,8 +88,15 @@ const Game: React.FC = () => {
             </div>
             :(
                 <>
-                    <GameResult playerChoice={playerChoice!} pcChoice={pcChoice!} />
-                    <GameMenu playerWins={playerWins} pcWins={pcWins} isWinner={isWinner} onRestart={handleRestart}/>
+                    <GameResult playerChoice={playerChoice? playerChoice : setRandomChoice()} pcChoice={pcChoice!} />
+                    <GameMenu 
+                        playerWins={playerWins}
+                        pcWins={pcWins}
+                        isWinner={isWinner}
+                        onRestart={handleRestart}
+                        playerChoice={playerChoice!}
+                        pcChoice={pcChoice!}
+                    />
                 </>
             )}
         </div>
