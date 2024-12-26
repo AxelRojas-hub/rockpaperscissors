@@ -1,0 +1,19 @@
+.rules-text{
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-inline: 1rem;
+}
+.rules-rps{
+    display: flex;
+        justify-content: center;
+        gap: 2rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+        img {
+            mask-image: linear-gradient(black 80%, transparent);
+        }
+}

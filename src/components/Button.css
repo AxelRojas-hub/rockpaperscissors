@@ -1,0 +1,16 @@
+.home-btn {
+  font-family: Odibee Sans;
+  background-color: var(--lightblue);
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  border: 6px solid;
+  border-color: var(--blue);
+  width: 100%;
+}
+
+.home-btn:hover {
+  background-color: var(--blue);
+  border-color: var(--lightblue);
+}

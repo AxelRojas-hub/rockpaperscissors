@@ -1,0 +1,81 @@
+.game-homebtn{
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    background-color: white;
+    transition: all 0.3s ease-in;
+}
+.game-homebtn:hover{
+    cursor: pointer;
+    border-color:black;
+}
+.game-title{
+    display: block;
+    margin: 0;
+    margin-top: 5rem;
+    font-size: 2.5em;
+    text-align: center;
+}
+.game-timer{
+    display: block;
+    margin: 0;
+    font-size: 15em;
+}
+.game-rps{
+    display: flex;
+        justify-content: center;
+        gap: 2rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+        img {
+            mask-image: linear-gradient(black 80%, transparent);
+        }
+}
+.game-rps:hover > :not(:hover){
+    opacity: 0.5;
+}
+.game-rps__item{
+    transition: all 0.3s ease-in-out;
+}
+.game-rps__item:hover{
+    cursor: pointer;
+    transform: scale(1.3) translateY(-15px);
+}
+/* Muestra de resultados */
+.game-result{
+    display: flex;
+    height: 100dvh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.game-result img{
+    height: 40dvh;
+}
+.game-pcChoice{
+    rotate: 180deg;
+}
+.game-rps__item.selected {
+    border: 2px solid var(--green);
+    padding: 5px;
+    /* Puedes cambiar el color y el estilo del borde */
+    background-color: rgba(0, 255, 47, 0.2);
+    border-radius: 5px;
+    /* Fondo semi-transparente */
+}
+.result-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+}
