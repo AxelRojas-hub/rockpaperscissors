@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Rules.css';
 import Button from './components/Button';
+import piedraImg from './assets/piedra.svg';
+import papelImg from './assets/papel.svg';
+import tijeraImg from './assets/tijera.svg';
 
 const Rules: React.FC = () => {
     return (
@@ -11,16 +14,16 @@ const Rules: React.FC = () => {
                 <Button text='¡Jugar!' />
             </Link>
             <div className="rules-rps">
-          <div className="rules-rps__item">
-            <img src="./src/assets/piedra.svg" alt="Piedra" />
-          </div>
-          <div className="rules-rps__item">
-            <img src="./src/assets/papel.svg" alt="Papel" />
-          </div>
-          <div className="rules-rps__item">
-            <img src="./src/assets/tijera.svg" alt="Tijera" />
-          </div>
-        </div>
+                <div className="rules-rps__item">
+                    <img src={piedraImg} alt="Piedra" />
+                </div>
+                <div className="rules-rps__item">
+                    <img src={papelImg} alt="Papel" />
+                </div>
+                <div className="rules-rps__item">
+                    <img src={tijeraImg} alt="Tijera" />
+                </div>
+            </div>
         </>
     );
 };

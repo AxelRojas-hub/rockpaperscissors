@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './GameMenu.css';
 import Button from './Button';
+import starImg from '../assets/star.svg';
 
 interface GameMenuProps {
     playerWins: number;
@@ -29,7 +30,7 @@ const GameMenu: React.FC<GameMenuProps> = ({ playerWins, pcWins, isWinner, onRes
 
     return (
         <div className='game-menu'>
-            <img src="src/assets/star.svg" alt="Estrella" />
+            <img src={starImg} alt="Estrella" />
             <div className='game-menu__box'>
                 {isWinner === null ? (
                     <div>
