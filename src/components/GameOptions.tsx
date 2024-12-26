@@ -1,7 +1,7 @@
 import React from 'react';
-import piedraImg from './src/assets/piedra.svg'
-import papelImg from './src/assets/papel.svg'
-import tijeraImg from './src/assets/tijera.svg'
+import piedraImg from '/src/assets/piedra.svg'
+import papelImg from '/src/assets/papel.svg'
+import tijeraImg from '/src/assets/tijera.svg'
 interface GameOptionsProps {
     playerChoice: string;
     handlePlayerChoice: (choice: string) => void;
